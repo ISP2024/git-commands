@@ -1,18 +1,29 @@
-## Using Git
+> **Instructions**
+> 
+> 1. Answer these questions using Markdown format.   
+> 2. **Test that your answers are correct!** There is **no excuse** for submitting an incorrect answer, since you can verify them by experimentation.    
+> 3. Create a Table of Contents, with a link to each section (Basics, Adding and Changing Things, Undoing Changes, etc.)    
+>    - Optional: you can split this file into separate files. A file for `Basics.md`, `ChangingThings.md`, etc.
+> 4. Delete these instructions.    
+> 5. Check that your formatting is correct (points deducted if incorrect).  VS Code and IntelliJ have markdown previewers. See Sahanon's post on Discord for better VS Code previewer.
 
-> 1. Answer these questions using Markdown.  
-> 2. Delete these instructions.    
-> 3. Check that your formatting is correct (points deducted if incorrect).  VS Code and IntelliJ have markdown previewers.
-> 4. Optional: For your own reference you may optionally do the following:
->    * Divide this file into separate Markdown files for each section, and put a link to each file in README.md.
->    * Add additional sections or questions to the end for things you'd like to remember.
-
-> To display your answers as lines of *unformatted text* (like HTML `<pre>` tag) there are 2 ways to do it:
-> - leave 4 spaces at start of the line (and the text on the line must not "look like" a Markdown numbered or bulleted item)
-> - put the lines between triple backquotes (as in the source code for this file):    
+> To display your answers as lines of *unformatted text* there are 2 ways to do it:
+> - (best) put the lines between triple backquotes, as in the source for this file:    
     ```
     unformatted text
     ```
+> - leave 4 spaces at start of the line (and the text on the line must **not** "look like" a Markdown numbered or bulleted item)
+
+## Using Git
+
+TODO: Create a table of contents here.  There should be a clickable link to each
+part of the document (or other files).  Note that a link looks the same whether 
+it is a link to a section in this file or a link to a section in another file.
+
+### Note on Paths
+
+In this file, directory paths are written with a forward slash as on MacOS, Linux, and the Windows-Bash shell: `/dir1/dir2/somefile`.  For the MS Windows command prompt, substitute a backslash: `\dir1\dir2\somefile`.
+
 
 ## Part 1. Basics
 
@@ -22,69 +33,72 @@
    * master -
    * HEAD -
 
-2. A git commit includes the author's name and email.  How does git know your name and email?  When you install git on a new machine (or in a new user account) you should perform what 2 git commands?
+2. A git commit includes the author's name and email.  When you install git on a new machine (or in a new user account) you should perform these 2  git commands to tell git your name and email:
     ```
     # Git configuration commands for a new account
 
 
     ```
 3. There are 2 ways to create a local Git repository.  What are they?
-    - describe first way (one sentence)
-    - describe second way
+    - todo: describe first way
+    - todo: describe second way
+
+4. If you create a git repository in a directory named "/project1" by entering `git init`, Git will create a "hidden" directory for the local repository.  Where is the directory for the local repository (write the full path)?
 
 
-4. Suppose you create a git repository in a directory (folder) named "/project1". Where does git put the repository files for this project? Write the path to git's files.
-
-
-### Part 2. Adding and Changing Stuff
+### Part 2. Adding and Changing Things
 
 Suppose your working copy of a repository contains these files and directories:
 ```
-README
+README.md
 out/
-     a.exe
-src/ a
-     b
-	 c
+    a.exe
+src/a.py
+    b.py
+	c.py
 test/
-     d
+    test_a.py
+    ...
 ```     
 
-1. What is the command to add README and *everything* in the `src` directory to the git staging area?
+1. What is the command to add README.md and *everything* in the `src` directory to the git staging area?
 
 
-2. Write the command to add `test/d` to the staging area.
+2. Write the command to add `test/test_a.py` to the staging area (but not other files).
 
 
 3. Write a command to list files in the staging area.
 
 
-4. You decide you **don't** want to add `test/d` to git.  Write the command to remove `test/d` from the staging area.
+
+4. You decide you **don't** want to commit `test/test_a.py` to git.  The command to remove `test/test_a.py` from the staging area is:
 
 
-5. Write the command to commit the staging area to the repository.
+5. The command to commit everything in the staging area to the repository is:
 
 
 
-6. You **never** want any files in the `out/` directory to be commited to git. Describe 2 steps to configure git for this:
-    * step one
-	* step two
+6. You **never** want any files in the `out/` directory to be added to git. Describe 2 steps to configure the repo so git always ignores files in the `out/` directory:
+   - step one
+   - step two
 
 
-7. What is the command to move `a`, `b`, and `c` from the `src` directory to the top-level directory of the project, so that they are also moved in the git repository?
+7. What is the command to move `a.py`, `b.py`, and `c.py` from the `src` directory to the top-level directory of the project, so that they will also moved in the git repository?
 
 
-8. Commit this change with the message "moved src directory".
+8. Commit this change with the message "moved src directory":
 
 
-9. If you change a **lot** of files, using `git add` for each one can be tedious.  Write a command to add *all modified files* to the staging area.   
-    (After doing this you should use "git status" to verify you didn't add unintended files.)
+9. To add **all changed files** (but not untracked files) using a single command, enter:
+
+    After doing this you should use "git status" to verify you didn't add unintended files.
 
 
-10. What is the command to delete the file `c` from both your working copy **and** the repository? (This stages the change but it is not deleted from repo until you commit it.)
+10. To delete the file `c.py` from your working copy **and** the repository, enter these two commands:
 
 
-11. What is the command to show all differences between your working copy and the most recent commit? (Can be kind of hard to read.)
+
+11. To see differences What is the command to show all differences between your working copy and the most recent commit? (Can be kind of hard to read.)
 
 
 
@@ -175,4 +189,4 @@ test/
 [ProGit]: https://www.git-scm.com/book/en/v2 "Pro Git online book on Git-scm.com"
 [ProGitPdf]: https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf "Pro Git v.2 PDF on AWS. Longer, book format."
 [LearnGitInteractive]: https://learngitbranching.js.org "Interactive graphical git tutorial"
-[VisualizeGit]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo, as you type"
+[VisualizeGit]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo as you type"
