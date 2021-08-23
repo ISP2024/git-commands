@@ -11,7 +11,7 @@
     ```
     unformatted text
     ```
-> - leave 4 spaces at start of the line. The text on the line must **not** "look like" a Markdown numbered or bulleted item (if it does, Markdown will format it as a nested list item).
+> - leave 4 spaces at start of the line. The text on the line must **not** "look like" a Markdown numbered or bulleted item.
 
 ## Using Git
 
@@ -24,7 +24,7 @@
 ### Note on Paths
 
 In this file, directory paths are written with a forward slash as on MacOS, Linux, and the Windows-Bash shell: `/dir1/dir2/somefile`.    
-For the MS Windows command prompt, when using the command substitute a backslash: `\dir1\dir2\somefile`.
+To use these commands in the MS Windows command prompt, substitute a backslash `\dir1\dir2\somefile`.
 
 
 ## 1. Basics
@@ -127,7 +127,6 @@ test/
 ## 4. Branch and Merge
 
 1. What is the command to create a new branch named `dev-foo`?
-
  
 
 2. The command to display the name of your current branch is:
@@ -152,10 +151,10 @@ test/
 ## 5. Viewing Commits
 
 1. To show the history of a repository in the terminal (command) window, using one line per commit is:
-    ```
-    git log --oneline --graph
-    ```
-    Some versions of git have an *alias* "log1" for this (`git log1`).
+   ```
+   git log --oneline --graph
+   ```
+   Some versions of git have an *alias* "log1" for this (`git log1`).
 
 2. To show the history (as above) including all branches in the repository, use:
 
@@ -175,7 +174,7 @@ test/
 
 Learn Git:
 
-[Pro Git Online Book][ProGit] best source for Git. Ch. 2 & 3 contain the essentials. Free e-book download available.     
+[Pro Git Online Book][ProGit] best source for Git. Ch. 2 & 3 contain the essentials. Free e-book available.     
 [Visual Git Reference](https://marklodato.github.io/visual-git-guide) one page with illustrations of git commands.
 
 Try Git:
