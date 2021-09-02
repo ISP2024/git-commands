@@ -35,8 +35,8 @@
 7. Suppose you want to move "origin" to a different URL. This can happen when:
    - you change the name of the repo on Github
    - you transfer ownership to someone else
-   - you want to move from Github to another site, like Bitbucket
-   What is the command to change the URL of "origin" `to https://github.com/newuser/newreponame`
+   - you want to move from Github to another site, like Bitbucket.    
+   What is the command to change the URL of "origin" `to https://github.com/newuser/newrepo`
 
 
 
