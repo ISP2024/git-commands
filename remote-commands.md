@@ -1,9 +1,11 @@
-## 7. Commands for Remotes
+## Commands for Remotes
 
-1. To list all your remote repositories, with their URL, use:
+> TODO: write the git command(s) to do each of these
+
+1. List all your remote repositories and show their URL:
 
 
-2. To view details about a rempote repo named `origin`, including all the remote banches and local tracking branches for `origin` is:
+2. View details about a remote repo named `origin`, including all the remote banches and local tracking branches for `origin`:
 
 3. You commit some files to `dev-foo` and try to "push" them to Github, but it fails:
 
@@ -15,7 +17,7 @@
    Explain this error.
 
 
-4. What is the command to push `dev-foo` to `origin` as a new remote branch on `origin`?
+4. The command to push `dev-foo` to `origin` as a new remote branch on `origin`:
 
 
 
